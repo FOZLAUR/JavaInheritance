@@ -1,13 +1,18 @@
 package model;
 
 public class Felidae extends Animal{
+    public Felidae(){}
 
     public Felidae(int age, double weight){
-        super(age, weight);
+        this.age = age;
+        this.weight = weight;
     }
 
     public Felidae(int age, double weight, boolean running, boolean eating){
-        super(age, weight, running, eating);
+        this.age = age;
+        this.weight = weight;
+        this.running = running;
+        this.eating = eating;
     }
 
     public void meowMeow(){

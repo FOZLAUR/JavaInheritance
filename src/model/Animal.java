@@ -2,7 +2,7 @@ package model;
 
 public class Animal {
     public int age;
-    private double weight;
+    public double weight;
     public boolean running;
     public boolean eating;
 
@@ -57,5 +57,13 @@ public class Animal {
 
     public void setEating(boolean eating) {
         this.eating = eating;
+    }
+
+    public void displayData(){
+        System.out.println("Age: "+age);
+        System.out.println("Weight: "+weight);
+        System.out.println("Running: "+running);
+        System.out.println("Eating: "+eating);
+        System.out.println("");
     }
 }
